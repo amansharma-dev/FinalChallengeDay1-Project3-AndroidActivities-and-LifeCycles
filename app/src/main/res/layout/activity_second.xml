@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     tools:context=".SecondActivity">
 
     <RelativeLayout
@@ -147,7 +148,7 @@
         android:textSize="21sp"
         android:textStyle="italic"
         android:textColor="@color/colorBtn_txt"
-        />
+        android:inputType="text" />
 
     <Button
         android:id="@+id/sendToMainActivity_btn"
