@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <RelativeLayout
+        android:id="@+id/receiveRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:layout_marginTop="25dp">
+
+            <RelativeLayout
+                android:id="@+id/rootName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/titleNAme_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_2"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBtn_txt"/>
+
+                <TextView
+                    android:id="@+id/receiveName_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/titleNAme_tv"
+                    android:layout_toRightOf="@id/titleNAme_tv"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    tools:text="James Allen"
+                    android:textColor="@color/colorBtn_txt"
+                    android:textSize="24sp"
+                    android:textStyle="italic|bold"/>
+
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rootCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rootName"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/titleCity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city_2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBtn_txt"/>
+
+            <TextView
+                android:id="@+id/receiveCity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/titleCity_tv"
+                android:layout_toRightOf="@id/titleCity_tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                tools:text="Sweden"
+                android:textColor="@color/colorBtn_txt"
+                android:textSize="24sp"
+                android:textStyle="italic|bold"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rootMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rootCity">
+
+            <TextView
+                android:id="@+id/titleMobileNumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number_2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBtn_txt"/>
+
+            <TextView
+                android:id="@+id/receiveMobileNumber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/titleMobileNumber_tv"
+                android:layout_toRightOf="@id/titleMobileNumber_tv"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                tools:text="9998887771"
+                android:textColor="@color/colorBtn_txt"
+                android:textSize="24sp"
+                android:textStyle="italic|bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/receiveRoot"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorBtn_txt"
+        />
+
+    <TextView
+        android:id="@+id/titleFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="26sp"
+        android:textColor="@color/colorBtn_txt"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:text="@string/feedback"/>
+
+    <EditText
+        android:id="@+id/feedback_editText"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toBottomOf="@id/titleFeedback"
+        android:layout_marginTop="25dp"
+        tools:text="Good work, keep it up."
+        android:gravity="center_vertical"
+        android:textSize="21sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorBtn_txt"
+        />
+
+    <Button
+        android:id="@+id/sendToMainActivity_btn"
+        android:layout_width="295dp"
+        android:layout_height="65dp"
+        android:background="@color/colorBtn_txt"
+        app:layout_constraintTop_toBottomOf="@id/feedback_editText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="@string/send_feedback_to_main_activity"
+        android:textSize="18sp"
+        android:textColor="@color/colorBackground"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/androidStudio_svgImg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_androidstudio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/android_studio_icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

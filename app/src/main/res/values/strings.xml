@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FinalChallengeDay1-Project3-AndroidActivities-and-LifeCycles</string>
+    <string name="project_3">Project 3</string>
+    <string name="name">Name</string>
+    <string name="city">City</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send_to_activity_a">Send To Activity A</string>
+    <string name="reviews">Reviews</string>
+    <string name="name_2">Name :</string>
+    <string name="city_2">City :</string>
+    <string name="mobile_number_2">Mobile Number :</string>
+    <string name="feedback">Feedback</string>
+    <string name="send_feedback_to_main_activity">Send Feedback to Main Activity</string>
+    <string name="android_studio_icon">Android Studio Icon</string>
 </resources>
